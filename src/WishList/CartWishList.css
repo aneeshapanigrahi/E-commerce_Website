@@ -1,0 +1,38 @@
+#cartWishList-main .hr {
+  height: 1px;
+  background-color: black;
+}
+
+#cartWishList-main #empty-text {
+  padding: 300px 0;
+  background-color: cornsilk;
+}
+
+#cartWishList-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#wishList-card {
+  background-color: rgb(191, 245, 245);
+  padding: 1vw 2vw;
+  width: 310px;
+  margin: 15px 0;
+}
+
+#wishList-card a {
+  text-decoration: none;
+  color: black;
+}
+
+#wishList-card a:hover {
+  color: orange;
+}
+#wishList-card img {
+  height: 250px;
+  width: 200px;
+}
+
+#wishList-card p {
+  font-weight: 700;
+}

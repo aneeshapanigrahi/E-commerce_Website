@@ -1,0 +1,141 @@
+#no-items-text {
+  text-align: center;
+  padding: 15vw 0;
+  color: rgb(92, 90, 90);
+  background-color: #fff;
+}
+#no-items-text h1 {
+  font-weight: 600;
+}
+
+#items-div {
+  margin: 2vw 2vw;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+#items-div h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+#items-div p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(107, 105, 105);
+}
+#items-div #items-card {
+  position: relative;
+  background-color: rgb(212, 225, 231);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-top: 2vw;
+  padding: 1vw 2vw;
+}
+
+#items-div #items-card img {
+  width: 10vw;
+  height: 15vw;
+  margin-left: 3vw;
+}
+#items-div #items-card div a p:hover {
+  color: orange;
+}
+
+#items-div #items-card div:first-child {
+  background-color: #fff;
+}
+
+#items-div #items-card div:nth-child(2) {
+  padding-right: 7.5vw;
+  padding-left: 3vw;
+}
+#items-div #items-card #prodId {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+#items-div #counter {
+  position: absolute;
+  top: 2vw;
+  right: 2vw;
+}
+
+#items-div #counter button {
+  border: solid black 1px;
+  background-color: #fff;
+  padding: 0.5vw;
+  border-radius: 0;
+}
+
+#items-div #counter span {
+  margin: 0 1.5vw;
+}
+
+#items-div #remove-button button {
+  padding: 0.5vw 1vw;
+  border: solid black 1px;
+  background-color: white;
+
+  position: absolute;
+  bottom: 4vw;
+  right: 2vw;
+  font-weight: 600;
+}
+#items-div #remove-button button:hover {
+  transition-duration: 0.5s;
+  background-color: rgb(240, 128, 124);
+  color: #fff;
+}
+
+#items-div #price-div {
+  padding: 4.5vw 1.2vw;
+  position: relative;
+}
+
+#items-div #price-div div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#items-div #price-div h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+#items-div #price-div button {
+  background-color: orange;
+  border: none;
+  color: #fff;
+  padding: 0.5vw 0.8vw;
+}
+
+#items-div #price-div button:hover {
+  background-color: rgb(217, 223, 169);
+  color: black;
+
+  transition-duration: 0.4s;
+}
+
+@media only screen and (max-width: 1260px) {
+  #items-div {
+    grid-template-columns: 1fr;
+  }
+  #items-div #items-card img {
+    width: 70%;
+    height: 70%;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  #items-div #items-card img {
+    width: 90%;
+    height: 90%;
+    padding-left: 0;
+  }
+  #items-div h1 {
+    font-size: 1.3rem;
+  }
+  #items-div p {
+    font-size: 0.9rem;
+  }
+}

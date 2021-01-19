@@ -1,0 +1,34 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: auto;
+}
+.main .col{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.main .card {
+    height: 230px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #ffd662ff;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: black;
+    margin: 50px 0px 50px 0px;
+}
+.main h1{
+    margin: 20px auto 30px;
+    font-family: "Merriweather", sans-serif;
+}
+.main .card .icon {
+    color: black;
+    font-size: 50px;
+    margin: 10px;
+}

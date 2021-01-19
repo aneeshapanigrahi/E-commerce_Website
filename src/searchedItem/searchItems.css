@@ -1,0 +1,110 @@
+#search-items-div {
+  position: relative;
+}
+
+#search-items-div .scrollToTop {
+  display: fixed;
+  top: 1.5vw;
+  right: auto;
+  bottom: auto;
+  left: 45vw;
+  width: 8vw;
+  height: auto;
+  text-align: center;
+  background-color: rgb(235, 195, 85);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+#search-items-div .query-info {
+  padding: 2vw 0 1vw 9vw;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#search-items-div .hr {
+  background-color: black;
+  height: 1px;
+}
+
+#search-items-div #search-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgb(231, 222, 231);
+}
+
+#search-items-div #search-contents #search-card {
+  position: relative;
+  width: 230px;
+  margin: 0.7vw 1.3vw;
+  padding-left: 0.5vw;
+  background-color: white;
+}
+
+#search-items-div #search-contents #search-card a {
+  text-decoration: none;
+  color: black;
+}
+
+#search-items-div #search-contents #search-card a img {
+  height: 240px;
+  width: 200px;
+}
+#search-items-div #search-contents #search-card a:hover {
+  text-decoration: none;
+  color: rgb(83, 83, 81);
+}
+#search-items-div #search-contents #search-card a div h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#search-items-div #search-contents #search-card a div p {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+#search-items-div #search-contents #search-card a .price-tag {
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: black;
+}
+
+@media only screen and (max-width: 1200px) {
+  #search-items-div #search-contents {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 689px) {
+  #search-items-div .query-info {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  #search-items-div #search-contents #search-card {
+    margin: auto 0;
+    width: 100%;
+  }
+
+  #search-items-div #search-contents #search-card a {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  #search-items-div #search-contents #search-card a img {
+    height: auto;
+  }
+
+  #search-items-div #search-contents #search-card a div {
+    padding: 2vw 2vw;
+  }
+
+  #search-items-div #search-contents #search-card a div h1 {
+    font-size: 1rem;
+  }
+  #search-items-div #search-contents #search-card div .price-tag {
+    font-size: 0.8rem;
+  }
+}

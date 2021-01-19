@@ -1,0 +1,66 @@
+.input-field p input,
+.input-field p input:active {
+    outline: none !important;
+    border: none !important;
+    font-size: 20px;
+    height: 25px;
+    background-color: transparent;
+    color: #333;
+    text-decoration: none;
+    width: 70%;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-top: 4px;
+}
+.input-field p input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+}
+.input-field p span{
+    position: absolute;
+    left: 20px;
+}
+.faicons{
+    margin: 5px;
+    font-size: 20px;
+    color: #aaa;
+    position: relative;
+}
+.btn-field .btn {
+    text-decoration: none;
+    width: 150px;
+    background-image: linear-gradient(-45deg, #68ebd1 0%, #04befe 100%);
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.image {
+    opacity: 100;
+    height: 400px;
+    width: 330px;
+    margin-right: 200px;
+    margin-top: 25px;
+}
+
+@media all and (max-width: 500px) {
+    .main{
+        background-image: linear-gradient(-45deg, #68ebd1 0%, #04befe 100%);
+        color: white;
+    }
+    .content .btn {
+        color: white;
+    }
+    .image {
+        opacity: 0;
+        height: 50px !important;
+    }
+}
+
+

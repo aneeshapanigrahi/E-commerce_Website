@@ -1,0 +1,236 @@
+export const NAVOPTS = [
+    {
+        section: "Men",
+        category: [
+            {
+                name: "Formals",
+                item: [
+                    {
+                        name: "Blazers",
+                        tag: [
+                            {
+                                name: "Cuffs",
+                                images: []
+                            },
+                            {
+                                name: "Collars",
+                                images: []
+                            },
+                            {
+                                name: "Front",
+                                images: []
+                            },
+                            {
+                                name: "Back",
+                                images: []
+                            },
+                            {
+                                name: "Pocket",
+                                images: []
+                            }
+                        ]
+                    }, {
+                        name: "Shirts",
+                        tag: [{
+                            name: "Collars",
+                            images: []
+                        }, {
+                            name: "Cuffs",
+                            images: []
+                        }, {
+                            name: "Front",
+                            images: []
+                        }, {
+                            name: "Back",
+                            images: []
+                        }, {
+                            name: "Pocket",
+                            images: []
+                        }
+                        ]
+                    }, {
+                        name: "Pants",
+                        tag: [
+                            {
+                                name: "Pocket",
+                                images: []
+                            },
+                            {
+                                name: "Front",
+                                images: []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                name: "Casual",
+                item: [
+                    {
+                        name: "Jeans",
+                        tag: [{
+                            name: "Waist",
+                            images: []
+                        }, {
+                            name: "Bottom",
+                            images: []
+                        }]
+                    }, {
+                        name: "Polo Shirt",
+                        tag: [{
+                            name: "Neck Front",
+                            images: []
+                        }, {
+                            name: "Neck Back",
+                            images: []
+                        }, {
+                            name: "Front",
+                            images: []
+                        }, {
+                            name: "Back",
+                            images: []
+                        }, {
+                            name: "Sleeves",
+                            images: []
+                        }]
+                    }, {
+                        name: "Shorts",
+                        tag: [{
+                            name: "Pattern",
+                            images: []
+                        }]
+                    }
+                ]
+            }
+
+        ]
+    }, {
+        section: "Women",
+        category: [
+            {
+                name: "Formals",
+                item: [
+                    {
+                        name: "Blazers",
+                        tag: [
+                            {
+                                name: "Cuffs",
+                                images: []
+                            },
+                            {
+                                name: "Collars",
+                                images: []
+                            },
+                            {
+                                name: "Front",
+                                images: []
+                            },
+                            {
+                                name: "Back",
+                                images: []
+                            },
+                            {
+                                name: "Pocket",
+                                images: []
+                            }
+                        ]
+                    }, {
+                        name: "Shirts",
+                        tag: [{
+                            name: "Collars",
+                            images: []
+                        }, {
+                            name: "Cuffs",
+                            images: []
+                        }, {
+                            name: "Front",
+                            images: []
+                        }, {
+                            name: "Back",
+                            images: []
+                        }, {
+                            name: "Pocket",
+                            images: []
+                        }
+                        ]
+                    }, {
+                        name: "Pants",
+                        tag: [
+                            {
+                                name: "Pocket",
+                                images: []
+                            },
+                            {
+                                name: "Front",
+                                images: []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                name: "Casual",
+                item: [
+                    {
+                        name: "Lehanga",
+                        tag: [{
+                            name: "Waist",
+                            images: []
+                        }, {
+                            name: "Bottom",
+                            images: []
+                        }]
+                    }, {
+                        name: "Kurti",
+                        tag: [{
+                            name: "Neck Front",
+                            images: []
+                        }, {
+                            name: "Neck Back",
+                            images: []
+                        }, {
+                            name: "Front",
+                            images: []
+                        }, {
+                            name: "Back",
+                            images: []
+                        }, {
+                            name: "Sleeves",
+                            images: []
+                        }]
+                    }, {
+                        name: "Dupatta",
+                        tag: [{
+                            name: "Pattern",
+                            images: []
+                        }]
+                    }, {
+                        name: "Saree",
+                        tag: [{
+                            name: "Bottom",
+                            images: []
+                        }, {
+                            name: "Border",
+                            images: []
+                        }]
+                    }, {
+                        name: "Blouse",
+                        "tag": [{
+                            name: "Neck Front",
+                            images: []
+                        }, {
+                            name: "Neck Back",
+                            images: []
+                        }, {
+                            name: "Sleeves",
+                            images: []
+                        }, {
+                            name: "Border",
+                            images: []
+                        }]
+                    }
+                ]
+            }
+        ]
+    }
+];

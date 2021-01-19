@@ -1,0 +1,14 @@
+.back {
+    background-image: url('./back.jpg') !important;
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer;
+}
+
+.back1 {
+    background-image: url('./back2.png') !important;
+}
+
+.back2 {
+    background-image: url('./back4.jpg') !important;
+}

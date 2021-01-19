@@ -1,0 +1,12 @@
+#AddNewItem {
+  background-color: rgb(157, 186, 238);
+  text-align: center;
+}
+#AddNewItem h1 {
+  font-size: 1.7rem;
+}
+
+#AddNewItem input {
+  width: 80%;
+  margin: auto;
+}

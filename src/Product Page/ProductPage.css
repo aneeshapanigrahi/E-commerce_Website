@@ -1,0 +1,215 @@
+p {
+  font-size: 1.1rem;
+}
+
+#main {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+#main button,
+#specsDiv button {
+  color: black;
+  background-color: rgb(235, 195, 85);
+  border: none;
+  height: 50px;
+  width: 152px;
+  border-radius: 0.5rem !important;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* --------------- */
+#topDiv {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+#imageDiv {
+  padding: 20px;
+  position: relative;
+}
+#main #topDiv #imageDiv img {
+  width: 400px;
+  height: 500px;
+  margin-left: 50px;
+}
+#main #topDiv #imageDiv .container {
+  display: grid;
+  padding: 10px 0 0 50px;
+  grid-template-columns: auto auto;
+}
+/* ----------------------------- */
+
+#specsDiv {
+  padding: 20px 40px;
+}
+
+#specsDiv h1 {
+  font-weight: 400;
+  font-size: 3rem;
+}
+#specsDiv h2 {
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+#specsDiv p {
+  font-size: 1.3rem;
+}
+
+#specsDiv #price {
+  color: rgb(230, 165, 44);
+  padding: 10px 0;
+  font-size: 1.7rem;
+}
+#specsDiv #available {
+  color: green;
+}
+
+#specsDiv #not-available {
+  color: red;
+}
+
+/* ---------------------------- */
+#delivery-form {
+  padding-top: 20px;
+}
+
+#box {
+  border: solid 2px black;
+  height: auto;
+  width: 45%;
+  padding: 20px;
+}
+
+#box p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#box .box-search {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+#box .box-search input {
+  margin-left: 0;
+}
+
+#box .box-search button {
+  margin-left: 10px;
+  width: 90%;
+}
+#box input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ----------bottom-div----------- */
+
+#bottomDiv {
+  text-align: center;
+}
+#bottomDiv div {
+  text-align: justify;
+}
+
+#bottomDiv div p {
+  font-size: 1rem;
+}
+#main #bottomDiv {
+  padding-top: 40px;
+}
+#main #bottomDiv div {
+  padding: 10px 90px;
+}
+/* ---------------------- */
+
+/* ------------ */
+
+/* -------------Responsiveness -----------------*/
+@media only screen and (max-width: 1280px) {
+  #main #topDiv #imageDiv .container {
+    grid-template-columns: auto;
+    padding-left: 90px;
+  }
+  #main #topDiv #imageDiv .container button {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #topDiv {
+    grid-template-columns: auto;
+  }
+
+  #main #topDiv #imageDiv img {
+    width: 100%;
+  }
+
+  #main #topDiv #imageDiv .container {
+    grid-template-columns: auto auto;
+    padding-left: 100px;
+  }
+
+  #main #topDiv #specsDiv {
+    text-align: center;
+  }
+
+  #main #topDiv #specsDiv #priceDetails-div {
+    justify-content: center;
+    text-align: center;
+  }
+  #specsDiv h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+  }
+  #specsDiv h2 {
+    font-weight: 800;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #main #topDiv #imageDiv .container {
+    grid-template-columns: auto auto;
+    padding-left: 40px;
+  }
+  #main #topDiv #imageDiv .container button {
+    width: 90%;
+  }
+}
+
+/* -------------------------------------for the buttons--------------------------------------------------- */
+@media only screen and (max-width: 386px) {
+  #main #specsDiv .buttons-b button {
+    display: inline-block;
+    margin: 4vw 0;
+  }
+  #specsDiv .buttons-b button {
+    width: 60%;
+  }
+
+  #main #bottomDiv div {
+    padding: 0 10vw;
+  }
+  #main #topDiv #imageDiv img {
+    height: 90%;
+  }
+
+  #specsDiv h1 {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  #specsDiv h2 {
+    font-weight: 800;
+    font-size: 1rem;
+  }
+  #specsDiv p {
+    font-size: 1.2rem;
+  }
+  #bottomDiv div p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+}

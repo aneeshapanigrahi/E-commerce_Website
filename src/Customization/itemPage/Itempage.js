@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import { Button, Col, Form, Container, Row } from 'react-bootstrap';
-import Sidenav from '../Home/components/Sidenav';
-import Summary from '../Customize/Summary';
-import Toolbar from '../Home/components/Toolbar';
-import Backdrop from '../Home/components/Backdrop';
 import Measure from '../Customize/Measure'
 import axios from 'axios';
+import '../Customize/Custombtn.css'
 
 export default class Itempage extends Component {
     state = {
@@ -16,14 +13,6 @@ export default class Itempage extends Component {
         value: '',
         size: '',
         id_0: null
-    }
-    drawerToggleClickHandler = () => {
-        this.setState(prevState => {
-            return { sideDrawerOpen: !prevState.sideDrawerOpen }
-        })
-    }
-    backdropClickHandler = () => {
-        this.setState({ sideDrawerOpen: false })
     }
     imageHandler = (e) => {
         const reader = new FileReader();
@@ -56,16 +45,8 @@ export default class Itempage extends Component {
     }
     render() {
         const { image, id_0 } = this.state
-        let backdrop
-
-        if (this.state.sideDrawerOpen) {
-            backdrop = <Backdrop click={this.backdropClickHandler} />
-        }
         return (
             <div style={{ height: '100%' }} className="Home">
-                <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-                <Sidenav show={this.state.sideDrawerOpen} />
-                {backdrop}
                 <div className="lander">
                     <Container className="customize">
                         <Row>
@@ -80,9 +61,18 @@ export default class Itempage extends Component {
                             </Col>
                             <Col style={{ paddingTop: "50px" }}>
                                 <Measure />
-                                <Summary value={this.state.value} size={this.state.size} />
-                                <Button type="submit" variant="secondary" style={{ marginTop: "2em" }} className="scalebtn" disabled={this.state.disabled} block
-                                    href={'/' + this.state.id + '/customization/' + id_0}>Customize</Button>
+                                <div style={{marginTop:'50px'}}>
+                                    <Container style={{ width: "400px" }} >
+                                        <h5><b>Instructions To Upload:</b></h5>
+                                        <ul align="left" style={{marginTop:'20px'}}>
+                                            <li>Uploaded image should be clear.</li>
+                                            <li>Mention if there are any addtional requirements.</li>
+                                            <li>Open the page where you want insert the image.</li>
+                                            <li>Use your keywords in photo option.</li>
+                                            <li>In the Add images select, add selected to insert image into the page.</li>
+                                        </ul>
+                                    </Container>
+                                </div>
                             </Col>
                         </Row>
                     </Container>

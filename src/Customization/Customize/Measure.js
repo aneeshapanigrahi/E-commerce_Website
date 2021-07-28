@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Button, ButtonGroup, ToggleButton } from 'react-bootstrap';
 import './Custombtn.css'
 import { connect } from 'react-redux';
-import { selectedRadio } from './actions';
+//import { selectedRadio } from './actions';
 
 class Measure extends React.Component {
     constructor() {
@@ -57,4 +57,4 @@ class Measure extends React.Component {
 }
 
 
-export default connect(null, { selectedRadio })(Measure);
+export default connect(null)(Measure);

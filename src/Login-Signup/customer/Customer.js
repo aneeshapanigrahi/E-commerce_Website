@@ -53,20 +53,13 @@ class Customer extends React.Component {
         return (
             <div>
                 <Navigation/>
-                <div className="main" style={{ display: 'flex' }}>
-                    <Row>
-                        <Col className="col" md={{ order: '2' }} lg={{ order: '1' }}
-                            style={{ display: 'flex', flexDirection: 'column', alignContent: 'center', alignItems: 'center', justifyContent: 'center' }}>
-                            <div className="content" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px' }}>
-                                <h3 style={{fontFamily: 'Merriweather sans-serif', marginTop:'20px'}} >Are you Designer ?</h3>
-                                <p>So what are you waiting for, Sign in and make money with us</p>
-                                {/* <Link to='/designer'> */}
-                                <button className="btn transparent" id="sign-in-btn">Sign in</button>
-                                {/* </Link> */}
-                            </div>
+                <div className="main" style={{marginTop:"80px"}}>
+                    <Row style={{display: "flex", flexDirection: 'row',alignItems: 'center',justifyContent: 'center',position: 'relative', top:'50%', padding:'auto'}}>
+                        <Col className="col"
+                            style={{ alignItems: 'center', justifyContent: 'center',display: "flex" }}>
                             <img src="images/register.svg" className="image" alt="" />
                         </Col>
-                        <Col className="col" md={{ order: '1' }} lg={{ order: '2' }}
+                        <Col className="col" 
                             style={{ display: 'flex', flexDirection: 'column', alignContent: 'center', alignItems: 'center', justifyContent: 'center' }}>
                             <form action="#" className="sign-up-form" onSubmit={this.submitHandler} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                 <h1 className="title" style={{ fontSize: '2.2rem', color: '#444', fontWeight: '1000', fontFamily: 'Merriweather sans-serif' }}><strong>Customer Sign in</strong></h1>

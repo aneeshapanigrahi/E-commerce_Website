@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { Route, Switch } from "react-router-dom";
 import { Spinner } from "react-bootstrap";
 import checkout from '../CheckoutPage/CheckoutPage';
-import Login from "../Login-Signup/Login";
+// import Login from "../Login-Signup/Login";
 import Customer from "../Login-Signup/customer/Customer";
 import SearchItem from "../searchedItem/searchItems";
 import Customersignup from "../Login-Signup/customer/Customersignup";
@@ -51,8 +51,8 @@ class Routes extends React.Component {
       >
         <Switch>
           <Route path="/checkout" exact component={checkout} />
-          <Route path="/" exact component={Login} />
-          <Route path="/customer" exact component={Customer} />
+          {/* <Route path="/" exact component={Login} /> */}
+          <Route path="/" exact component={Customer} />
           <Route path="/signup/customer" exact component={Customersignup} />
           <Route path="/homePage" exact component={HomePage} />
           <Route path="/myAccount" exact component={MyAccount} />

@@ -44,7 +44,7 @@ const Header = () => {
   return (
     <header id="header">
       <nav id="header-nav" className="navbar navbar-expand-lg navbar-light ">
-        <a href="/" className="navbar-brand">
+        <a href="/homePage" className="navbar-brand">
           Mirror
         </a>
         <button

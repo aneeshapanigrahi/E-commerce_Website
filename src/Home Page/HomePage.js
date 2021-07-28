@@ -6,6 +6,7 @@ import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 import AOS from 'aos';
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 
 function HomePage() {
@@ -17,7 +18,7 @@ function HomePage() {
     });
 
     return (
-        <div>
+        <div style={{marginTop:'-50px'}}>
 
             <div className="home-header">
                 <div className="row no-gutters ">
@@ -56,121 +57,18 @@ function HomePage() {
                                 <a onclick="myFunction()" id="myBtn" className="read"> Read More.. </a></p>
                             <br />
                             <br />
-                            <div className="row" style={{ display: "flex", flexDirection: "row", alignContent: "center", justifyContent: "center", alignItems: "center" }} >
-                                <div className="col b1"> <button className="btn btn-light" style={{ textTransform: "none", fontSize: "16px" }}>Customize</button></div>
-                                <div className="col b2"> <button className="btn btn-light" style={{ textTransform: "none", fontSize: "16px" }}>Post</button></div>
-                            </div>
-
-
-
+                            <div style={{display:'flex', justifyContent:'center'}} >
+                            <Link to='/customizationPage'>
+                                <button className="btn btn-light col b1 " style={{ textTransform: "none", backgroundColor:'#FFD662FF',borderRadius:'4px',border:'none' , fontSize: "16px", maxWidth:'200px' }}>Customize</button>
+                                </Link>
+                                </div>
+                        
                         </div>
 
                     </div>
                 </section>
             </div>
-            {/* <Carousel fade style={{maxHeight:'200px'}}>
-  <Carousel.Item interval={1000}>
-    <img
-      className="d-block w-100"
-      src="/images/shop1.jpg"
-      alt="First slide"
-    />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item interval={500}>
-    <img
-      className="d-block w-100"
-      src="/images/designimg.jpg"
-      alt="Second slide"
-    />
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="/images/shop2.jpg"
-      alt="Third slide"
-    />
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel> */}
-            {/*slider boxes*/}
-            <div className="carousel" id="sliderimg" style={{display:'flex',flexDirection:'row',justifyContent:'center'}}>
-                <AliceCarousel autoPlay autoPlayInterval="10000">
-                    <div style={{maxWidth:'500px'}}>
-                        <Card>
-                            <Card.Img variant="top" src="/images/shop1.jpg" />
-                            <Card.Body>
-                                <Card.Title>Attractive Prices</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    card's content.
-                                </Card.Text>
-                                <Button variant="primary">Read More.</Button>
-                            </Card.Body>
-                        </Card>
-
-                    </div>
-
-                    <div style={{maxWidth:'500px'}}>
-
-                        <Card >
-                            <Card.Img variant="top" src="/images/designimg.jpg" />
-                            <Card.Body>
-                                <Card.Title>Amazing Discounts</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    card's content.
-                                </Card.Text>
-                                <Button variant="primary">Read More.</Button>
-                            </Card.Body>
-                        </Card>
-
-                    </div>
-
-                    <div id="boxslider" style={{maxWidth:'500px'}}>
-
-                        <Card style={{ width: '45rem', }}>
-                            <Card.Img variant="top" src="/images/shop2.jpg" />
-                            <Card.Body>
-                                <Card.Title>Shirts</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    card's content.
-                                </Card.Text>
-                                <Button variant="primary">Read More.</Button>
-                            </Card.Body>
-                        </Card>
-
-                    </div>
-                    <div id="boxslider" style={{maxWidth:'500px'}}>
-
-                        <Card style={{ width: '45rem', }}>
-                            <Card.Img variant="top" src="/images/d1.jpg" />
-                            <Card.Body>
-                                <Card.Title>Flat 40% off !!</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    card's content.
-                                </Card.Text>
-                                <Button variant="primary">Read More.</Button>
-                            </Card.Body>
-                        </Card>
-
-                    </div>
-
-
-                </AliceCarousel>
-            </div>
+           
             <div className="about-container">
                 <section id="services">
                     <p style={{

@@ -47,7 +47,7 @@ const Header = () => {
   <Navbar.Toggle />
   <Navbar.Collapse >
     <Nav
-      className="m-auto"
+      className="ml-auto"
       style={{ maxHeight: '100px' }}
     >
       <Nav.Link href="/homePage">Home</Nav.Link>

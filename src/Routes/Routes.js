@@ -6,7 +6,7 @@ import checkout from '../CheckoutPage/CheckoutPage';
 import Customer from "../Login-Signup/customer/Customer";
 import SearchItem from "../searchedItem/searchItems";
 import Customersignup from "../Login-Signup/customer/Customersignup";
-const HomePage = lazy(() => import("../Home Page/HomePage"));
+const HomePage = lazy(() => import("../Home Page/Home"));
 const AllProduct = lazy(() => import("../components/AllProduct"));
 const ProductPage = lazy(() => import("../Product Page/ProductPage"));
 const Cart = lazy(() => import("../Cart Page/cart"));

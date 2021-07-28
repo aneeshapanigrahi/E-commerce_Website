@@ -45,12 +45,11 @@ const Header = () => {
     <header id="header">
         <Navbar bg="light" expand="lg" fixed='top'>
   <Navbar.Brand href="/homePage">Mirror</Navbar.Brand>
-  <Navbar.Toggle aria-controls="navbarScroll" />
-  <Navbar.Collapse id="navbarScroll">
+  <Navbar.Toggle />
+  <Navbar.Collapse >
     <Nav
-      className="m-auto my-2 my-lg-0"
+      className="m-auto"
       style={{ maxHeight: '100px' }}
-      navbarScroll
     >
       <Nav.Link href="/homePage">Home</Nav.Link>
       <Nav.Link href="/customizationPage">Customize</Nav.Link>
@@ -67,18 +66,17 @@ const Header = () => {
         type="search"
         placeholder="Search"
         className="mr-2"
-        aria-label="Search"
       />
-      <Button variant="outline-success">Search</Button>
+      <Link to={`/search/all/${userId}/${searchQuery}`}>
+          <Button type='submit'><i className="fa fa-search" /></Button>
+    </Link>
     </Form>
     </Nav>
-    <Nav className="m-auto">
-    <NavDropdown title={`fa fa-bell`} className="fa fa-bell">
-        <NavDropdown.Item href="/myAccount">My Account</NavDropdown.Item>
-        <NavDropdown.Item href="/myOrders">Orders and Returns</NavDropdown.Item>
-        <NavDropdown.Item href="/settings">Settings</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item onClick={() => logout()} href="/">Logout</NavDropdown.Item>
+    <Nav className="ml-auto">
+    <NavDropdown title={<div style={{display: "inline-block"}} className="fa fa-bell"> </div>} >
+        <NavDropdown.Item href="/settings">You have 0 Notifications</NavDropdown.Item>
+        {/* <NavDropdown.Divider />
+        <NavDropdown.Item onClick={() => logout()} href="/">Logout</NavDropdown.Item> */}
       </NavDropdown>
     <Nav.Link href={`/${userId}/wishList`}>
               <i
@@ -100,41 +98,10 @@ const Header = () => {
                   {cartCount}
                 </span>
               </i></Nav.Link>
-      
-            <a href="" className="fa fa-bell dropdown" id="navbarDropdown" type="button" data-toggle="dropdown" aria-expanded="true" />
-            <div size="2" className="dropdown-menu" aria-labelledby="navbarDropdown" id="navbarDropdowndiv" style={{ width: "300px", maxHeight: "600px", zIndex: '2000' }}>
-              <Dropdown.Header>Notifications</Dropdown.Header>
-              <Dropdown.Divider />
-              <div>
-                <Dropdown.Item eventKey="1">
-                  <div>
-                    <img src="https://cdn3.iconfinder.com/data/icons/users-yellow/60/50_-Blank_Profile-_user_people_group_team-512.png" alt="" style={{ height: '50px', width: "auto", borderRadius: "50%", margin: "0px 10px 10px 0px" }} />
-                Designer1
-                <p style={{ color: "gray" }}>I will charge Rs.100 for your post </p>
-                    <ButtonGroup>
-                      <Button variant="light" style={{ color: "black", backgroundColor: "#ffd662ff", borderColor: "#ffd662ff", borderRadius: "4px", marginRight: "5px" }}>Accept</Button>
-                      <Button variant="secondary" style={{ borderRadius: "4px" }}>Reject</Button>
-                    </ButtonGroup>
-                  </div>
-                </Dropdown.Item>
-                <Dropdown.Divider />
-                <Dropdown.Item eventKey="2">
-                  <img src="https://www.asiancancerinstitute.com/public/images/blank-user.png" alt="" style={{ height: '50px', width: "auto", borderRadius: "50%", margin: "0px 10px 10px 0px" }} />
-                Designer2
-                <p style={{ color: "gray" }}>I will charge Rs.100 for your post </p>
-                  <ButtonGroup>
-                    <Button variant="light" style={{ color: "black", backgroundColor: "#ffd662ff", borderColor: "#ffd662ff", borderRadius: "4px", marginRight: "5px" }}>Accept</Button>
-                    <Button variant="secondary" style={{ borderRadius: "4px" }}>Reject</Button>
-                  </ButtonGroup>
-                </Dropdown.Item>
-                <Dropdown.Divider />
-              </div>
-            </div>
-           
             </Nav>
   </Navbar.Collapse>
 </Navbar>
-      <nav id="header-nav" className="navbar navbar-expand-lg navbar-light ">
+      {/* <nav id="header-nav" className="navbar navbar-expand-lg navbar-light ">
         <a href="/homePage" className="navbar-brand">
           Mirror
         </a>
@@ -272,7 +239,7 @@ const Header = () => {
             </Link>
           </div>
         </div>
-      </nav>
+      </nav> */}
     </header>
   );
 };

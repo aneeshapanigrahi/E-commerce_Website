@@ -41,7 +41,7 @@ const Header = () => {
   };
 
   return (
-    <header id="header">
+    <header id="header" style={{zIndex:"5000", marginBottom:"70px"}}>
         <Navbar bg="light" expand="lg" fixed='top'>
   <Navbar.Brand href="/homePage">Mirror</Navbar.Brand>
   <Navbar.Toggle />
@@ -53,13 +53,15 @@ const Header = () => {
       <Nav.Link href="/homePage">Home</Nav.Link>
       <Nav.Link href="/customizationPage">Customize</Nav.Link>
       <Nav.Link href="/homePage">Shop</Nav.Link>
-      <NavDropdown title="Account" id="navbarScrollingDropdown">
+      <Link to="/myAccount">
+      <NavDropdown title="Account" style={{position: 'relative', top: '0', width: 'auto', opacity: '100', transform: 'none'}} >
         <NavDropdown.Item href="/myAccount">My Account</NavDropdown.Item>
         <NavDropdown.Item href="/myOrders">Orders and Returns</NavDropdown.Item>
         <NavDropdown.Item href="/settings">Settings</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item onClick={() => logout()} href="/">Logout</NavDropdown.Item>
       </NavDropdown>
+      </Link>
       <Form className="d-flex">
       <FormControl
         type="search"
@@ -67,15 +69,15 @@ const Header = () => {
         className="mr-2"
       />
       <Link to={`/search/all/${userId}/${searchQuery}`}>
-          <Button type='submit'><i className="fa fa-search" /></Button>
+          <Button type='submit' style={{padding: 'auto', border: 'none', borderRadius: '4px', lineHeight:'0', fontSize: '15px', height: '32px'}}><i className="fa fa-search" /></Button>
     </Link>
     </Form>
     </Nav>
     <Nav className="ml-auto">
-    <NavDropdown title={<div style={{display: "inline-block"}} className="fa fa-bell"> </div>} >
+    <NavDropdown title={<div style={{display: "inline-block"}} className="fa fa-bell"> </div>} 
+    style={{position: 'relative', top: '0', width: 'auto', opacity: '100', transform: 'none'}} >
         <NavDropdown.Item href="/settings">You have 0 Notifications</NavDropdown.Item>
-        {/* <NavDropdown.Divider />
-        <NavDropdown.Item onClick={() => logout()} href="/">Logout</NavDropdown.Item> */}
+        {/* <NavDropdown.Divider />*/}
       </NavDropdown>
     <Nav.Link href={`/${userId}/wishList`}>
               <i
@@ -100,7 +102,6 @@ const Header = () => {
             </Nav>
   </Navbar.Collapse>
 </Navbar>
-     
     </header>
   );
 };

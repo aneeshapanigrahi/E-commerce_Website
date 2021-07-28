@@ -63,7 +63,7 @@ class MyAccount extends Component {
                             </div>
                         </Drawer>
                         <div style={contentStyle}>
-                            <AppBar className="bar" style={{ backgroundColor: 'white', color: 'black', display: 'flex', flexDirection: 'row', alignItems: 'center', margin: '20px 0 20px 0' }} onLeftIconButtonClick={() => this.setState({ drawerOpen: true })} >
+                            <AppBar className="bar" style={{ zIndex:'0', backgroundColor: 'white', color: 'black', display: 'flex', flexDirection: 'row', alignItems: 'center', margin: '20px 0 20px 0' }} onLeftIconButtonClick={() => this.setState({ drawerOpen: true })} >
                                 <h2 style={{ color: 'black', marginRight: '55em' }}> Hello {this.state.name}</h2>
                             </AppBar>
 

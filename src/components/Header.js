@@ -52,7 +52,7 @@ const Header = () => {
     >
       <Nav.Link href="/homePage">Home</Nav.Link>
       <Nav.Link href="/customizationPage">Customize</Nav.Link>
-      <Nav.Link href="/homePage">Shop</Nav.Link>
+      <Nav.Link href="/shop">Shop</Nav.Link>
       <Link to="/myAccount">
       <NavDropdown title="Account" style={{position: 'relative', top: '0', width: 'auto', opacity: '100', transform: 'none'}} >
         <NavDropdown.Item href="/myAccount">My Account</NavDropdown.Item>

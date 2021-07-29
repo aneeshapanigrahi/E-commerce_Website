@@ -8,24 +8,27 @@ import { AppBar } from 'material-ui';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { propTypes } from 'react-bootstrap/esm/Image';
+import axios from 'axios';
 
 class MyAccount extends Component {
     constructor(props) {
         super(props);
         this.state = {
             drawerOpen: false,
-            userId: localStorage.getItem('userId')
+            userId: localStorage.getItem('userId'),
+            name:''
         };
     }
 
-    // componentDidMount() {
-    //     axios.get('http://localhost:8000/users/')
-    //         .then((res) => {
-    //             this.setState({
-    //                 name: res.data.name
-    //             });
-    //         });
-    // }
+    componentDidMount() {
+        axios.get('http://localhost:8000/users/')
+            .then((res) => {
+                this.setState({
+                    name: res.data.name
+                });
+            });
+            console.log(this.state.name)
+    }
     render() {
         const contentStyle = { transition: 'margin-left 450ms' };
         // const styleSheet = createMuiTheme({

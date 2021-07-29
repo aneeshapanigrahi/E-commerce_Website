@@ -7,6 +7,7 @@ import Customer from "../Login-Signup/customer/Customer";
 import SearchItem from "../searchedItem/searchItems";
 import Customersignup from "../Login-Signup/customer/Customersignup";
 const HomePage = lazy(() => import("../Home Page/HomePage"));
+const Shop = lazy(() => import("../Home Page/Shop"));
 const AllProduct = lazy(() => import("../components/AllProduct"));
 const ProductPage = lazy(() => import("../Product Page/ProductPage"));
 const Cart = lazy(() => import("../Cart Page/cart"));
@@ -15,7 +16,7 @@ const Admin = lazy(() => import("../Admin/Admin"));
 const CustomizeProducts = lazy(() =>
   import("../Admin/components/CustomizeProducts")
 );
-const CustomizationPage = lazy(() => import("../Customization/App"));
+const CustomizationPage = lazy(() => import("../Customization/itemPage/Itempage"));
 const MyAccount = lazy(() => import("../My Account/MyAccount"));
 const MyOrders = lazy(() => import("../My Account/MyOrders"));
 const Settings = lazy(() => import("../My Account/Settings"));
@@ -55,6 +56,7 @@ class Routes extends React.Component {
           <Route path="/" exact component={Customer} />
           <Route path="/signup/customer" exact component={Customersignup} />
           <Route path="/homePage" exact component={HomePage} />
+          <Route path="/shop" exact component={Shop} />
           <Route path="/myAccount" exact component={MyAccount} />
           <Route path="/customizationPage" exact component={CustomizationPage} />
           <Route path="/myOrders" exact component={MyOrders} />

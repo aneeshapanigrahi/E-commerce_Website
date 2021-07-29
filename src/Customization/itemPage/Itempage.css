@@ -1,0 +1,136 @@
+.instructions{
+    display: flex;
+    flex-direction: column;
+    align-content: center !important;
+}
+.Home {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+.Home .lander {
+    top: 0;
+    left: 60px;
+    margin-bottom: 4em;
+    align-items: center;
+}
+#alert{
+    top: 20px;
+    left: 76px;
+    z-index: 50;
+    animation-name: alert;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3) !important;
+    box-shadow: -2px -2px 5px 1px rgba(255, 255, 255, 0.7);
+    animation-duration: 1s;
+    height: max-content;
+}
+
+.customize {
+    text-align: center;
+    margin-top: 5em;
+}
+.img-holder{
+    height: 398px;
+    width: 350px;
+    margin: auto;
+    margin-top: 1em;
+}
+.img-holder img{
+    height: 398px;
+    width: 350px;    
+    border: 3px solid lightgray;
+    object-fit: contain;
+    margin: auto;
+}
+#input[type="file"] {
+    display: none;
+}
+.label {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.image-upload {
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 7px;
+    background-color: #ffd662ff;
+    height: 40px;
+    width: 350px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.image-upload:hover {
+    color: white;
+    transition: 0.2s;
+}
+#measure {
+    height: 350px;
+    width: 350px;
+    margin-top: 1em;
+}
+#measure:focus {
+    outline: none !important;
+    border:3px solid lightgray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#post{
+    background-color: #ffd662ff;
+    color: black;
+    outline: none !important;
+    border: none !important;
+    height: 40px;
+    width: 150px;
+    margin: auto;
+    margin-bottom: 4em !important;
+}
+.field {
+    margin: 20px;
+}
+.form {
+    text-decoration: none;
+    border: white;
+    background-color: #f8f9fa;
+    margin: 2em;
+    width: 40em !important;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
+    padding-top: 5px;
+    padding-bottom: 4px;
+}
+
+@media all and (max-width: 500px) {
+    .Home {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+    }
+    .Home .lander {
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .form{
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+    }
+}
+
+@keyframes alert {
+    from {
+        left: 200px;
+        opacity: 0;
+    }
+    to {
+        left: 76px;
+        opacity: 100%;
+    }
+}
+

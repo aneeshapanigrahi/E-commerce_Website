@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { Button, Col, Form, Container, Row } from 'react-bootstrap';
 import Measure from '../Customize/Measure'
 import axios from 'axios';
-import '../Customize/Custombtn.css'
+import './Itempage.css'
+import Header from "../../components/Header";
+import Footer from "../../components/Footer"
 
 export default class Itempage extends Component {
     state = {
@@ -47,6 +49,7 @@ export default class Itempage extends Component {
         const { image, id_0 } = this.state
         return (
             <div style={{ height: '100%' }} className="Home">
+                <Header/>
                 <div className="lander">
                     <Container className="customize">
                         <Row>
@@ -182,6 +185,7 @@ export default class Itempage extends Component {
                     </Container>
                     </div> */}
                 </div>
+                <Footer/>
             </div >
         );
     }

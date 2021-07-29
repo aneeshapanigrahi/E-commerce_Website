@@ -1,5 +1,6 @@
 {
   "name": "product-page",
+  "homepage": "https://aneeshapanigrahi.github.io/E-commerce_Website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +14,7 @@
     "aos": "^2.3.4",
     "axios": "^0.21.1",
     "bootstrap": "^4.5.2",
+    "gh-pages": "^3.2.3",
     "material-ui": "^0.20.2",
     "react": "^16.13.1",
     "react-alice-carousel": "^1.19.3",
@@ -28,6 +30,8 @@
     "redux": "^4.0.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
